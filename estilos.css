@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(10, 20, 20);
+    background-color: #444444;
+    color: #ffffff;
 }
 header {
     text-align: center;
@@ -9,13 +10,67 @@ footer {
     text-align: center;
 }
 p {
-    color: rgb(178, 190, 190);
     margin-left: 20px;
     font-family: Arial;
 }
 
 h1 {
-    color: rgb(178, 190, 190);
     margin-left: 20px;
     font-family: Arial;
+}
+
+#check{
+    display: none;
+}
+
+#icon{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra{
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left:-300px;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link{
+    background-color: #494950;
+    padding: 20px;
+    font-family: 'Arial';
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #F4F4F9;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link:hover{
+    background-color: #050542;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.2s;
 }
