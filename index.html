@@ -1,0 +1,61 @@
+<head>
+    <title>SVG para acéfalos - Home</title> <!-- título provisório -->
+    <link rel="stylesheet" href="styles/index.css" type="text/css" />
+    <link rel="stylesheet" href="styles/all.css" type="text/css" />
+    <link rel="stylesheet" href="styles/grid.css" type="text/css" />
+    <link rel="stylesheet" href="styles/estilos.css" type="text/css" />
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <ul class="navmenu">
+            <li onclick="navigate('home')">
+                <h3>
+                    Home
+                </h3>
+            </li>
+            <li onclick="navigate('retangulo')">
+                <h3>Rect</h3>
+            </li>
+            <li onclick="navigate('circulo')">
+                <h3>Circle</h3>
+            </li>
+            <li onclick="navigate('ellipse')">
+                <h3>Ellipse</h3>
+            </li>
+            <li onclick="navigate('line')">
+                <h3>Line</h3>
+            </li>
+            <li onclick="navigate('polyline')">
+                <h3>Polyline</h3>
+            </li>
+            <li onclick="navigate('polygon')">
+                <h3>Polygon</h3>
+            </li>
+            <li onclick="navigate('gradient')">
+                <h3>Gradient</h3>
+            </li>
+        </ul>
+    </header>
+    <div id="container">
+
+    </div>
+</body>
+
+<footer>
+    <h3 id="footer-text">Feito por Arthur Lohmann Massiero e Gabriel Vinhola - &copy;2020</h3>
+</footer>
+
+<script type="text/javascript">
+    function navigate(url) {
+        document.getElementById('container').innerHTML = loadPage(url + '.html')
+    }
+
+    function loadPage(href) {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", href, false);
+                xmlhttp.send();
+                return xmlhttp.responseText;
+            }
+</script>

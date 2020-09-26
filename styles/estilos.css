@@ -1,0 +1,14 @@
+p {
+    margin-left: 20px;
+    font-family: Arial;
+    text-align: justify;
+}
+
+.content {
+    padding: 0 0 0 0;
+    flex: 1 0 auto;
+}
+
+.negrito{
+    font-weight: bold;
+}
