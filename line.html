@@ -1,17 +1,25 @@
 <div>
     <h1>Line</h1>
     <br>
-    O elemento <span class="negrito">&lt;rect&gt;</span> desenha retângulos, sejam eles definidos por sua posição, largura e altura, estes retângulos também podem ter as suas bordas arredondadas;
+    O elemento <span class="negrito">&lt;line&gt;</span> cria uma linha no documento a partir de 2 pontos.
 </div>
 <br>
 <div>
     <h1>Atributos</h1>
-    xy:
+    x1: define a posição "x" do ponto 1;
     <br>
-    xz:
+    x2: define a posição "x" do ponto 2;
     <br>
-    width:
+    y1: define a posição "y" do ponto 1;
     <br>
-    weight:
+    y2: define a posição "y" do ponto 2;
     <br>
+    stroke-width: define a grossura da linha;
+    <br>
+</div>
+<div>
+    <svg width="400" height="400"> 
+        <line x1="5" x2="70" y1="37" y2="93" stroke="#6A5ACD" stroke-width="5"></line>
+        <line x1="80" x2="90" y1="100" y2="200" stroke="red"></line>
+    </svg>
 </div>
