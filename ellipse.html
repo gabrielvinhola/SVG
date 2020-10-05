@@ -1,21 +1,32 @@
 <div>
     <h1>Elipse</h1>
-    <br>
-    O elemento <span class="negrito">&lt;ellipse&gt;</span> cria uma elipse no documento.
+    <p>
+        O elemento <span class="negrito">&lt;ellipse&gt;</span> cria uma elipse no documento.<br>
+        Uma elipse é um círculo que não tem largura ou altura igual, ou seja, seus "x" e seus "y" tem diferentes direções.<br>
+        A elipse é centralizada em cx, cy como o círculo, mas ela possui 2 raios que são eles, rx e ry. <br>
+        Se o rx for maior que o ry, teremos uma elipse mais larga e vice-versa.<br>
+    </p>
 </div>
 <br>
 <div>
     <h1>Atributos</h1>
-    rx: o raio "x" da elipse;
-    <br>
-    ry: o raio "y" da elipse;
-    <br>
-    cx: posição "x" do centro da elipse;
-    <br>
-    cy: posição "y" do centro da elipse.
-    <br>
+    <p>
+        rx: o raio "x" da elipse.<br>
+        ry: o raio "y" da elipse.<br>
+        cx: posição "x" do centro da elipse.<br>
+        cy: posição "y" do centro da elipse.<br>
+        stroke-width: define a largura da elipse.<br>
+        stroke-opacity: define a opacidade da borda.<br>
+        stroke-dasharray: define a borda com pontilhados.<br>
+        fill: podemos usar para preencher a elipse.<br>
+        fill-opacity: por transparente a borda da elipse.<br>
+    </p>
 </div>
-<br>
+<textarea name="elipse" cols="120" rows="5" readonly>
+    <svg width="400" height="400"> 
+        <ellipse rx="150" ry="90" cx="200" cy="200" fill="#6A5ACD" stroke="#00BFFF"></ellipse>
+    </svg>
+</textarea>
 <div>
     <svg width="400" height="400"> 
         <ellipse rx="150" ry="90" cx="200" cy="200" fill="#6A5ACD" stroke="#00BFFF"></ellipse>

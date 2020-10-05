@@ -1,22 +1,29 @@
 <div>
     <h1>Line</h1>
-    <br>
-    O elemento <span class="negrito">&lt;line&gt;</span> cria uma linha no documento a partir de 2 pontos.
+    <p>
+        O elemento <span class="negrito">&lt;line&gt;</span> cria uma linha no documento a partir de 2 pontos.<br>
+        A linha começa nos atributos x1 e y1.<br>
+        A linha termina nos atributos x2 e y2.<br>
+        O atributo <span class="negrito">&lt;style&gt;</span> pode setar uma cor e grossura desta linha.
+    </p>
 </div>
 <br>
 <div>
     <h1>Atributos</h1>
-    x1: define a posição "x" do ponto 1;
-    <br>
-    x2: define a posição "x" do ponto 2;
-    <br>
-    y1: define a posição "y" do ponto 1;
-    <br>
-    y2: define a posição "y" do ponto 2;
-    <br>
-    stroke-width: define a grossura da linha;
-    <br>
+    <p>
+        x1: define a posição "x" do ponto 1;<br>
+        x2: define a posição "x" do ponto 2;<br>
+        y1: define a posição "y" do ponto 1;<br>
+        y2: define a posição "y" do ponto 2;<br>
+        stroke-width: define a grossura da linha;<br>
+    </p>
 </div>
+<textarea name="line" cols="120" rows="5" readonly>
+    <svg width="400" height="400"> 
+        <line x1="5" x2="70" y1="37" y2="93" stroke="#6A5ACD" stroke-width="5"></line>
+        <line x1="80" x2="90" y1="100" y2="200" stroke="red"></line>
+    </svg>
+</textarea>
 <div>
     <svg width="400" height="400"> 
         <line x1="5" x2="70" y1="37" y2="93" stroke="#6A5ACD" stroke-width="5"></line>
