@@ -5,6 +5,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family:'Montserrat', sans-serif;
 }
 
 body {
@@ -29,14 +30,12 @@ p {
     color: rgb(178, 190, 190);
     margin-left: 20px;
     margin-right: 20px;
-    font-family: Arial;
     text-align: justify;
     font-size: 25px;
 }
 
 h1 {
     color: rgb(178, 190, 190);
-    font-family: Arial;
     font-size: 48px;
     text-align: center;
     line-height: 1;
@@ -45,13 +44,11 @@ h1 {
 }
 
 h2 {
-    font-family: Arial;
     font-size: 16px;
     text-align: center;
 }
 
 h3 {
-    font-family: Arial;
     font-size: 20px;
     text-align: center;
 }
