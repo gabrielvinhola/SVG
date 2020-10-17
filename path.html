@@ -1,0 +1,65 @@
+<div>
+  <h1>Path</h1>
+  <p>
+    O elemento <span class="negrito">&lt;path&gt;</span> cria uma forma compostas por linhas não necessariamente
+    conectadas como polyline, mas pode ser composto tanto de retas
+    quanto de curvas, pode ser uma forma aberta ou fechada.<br>
+  </p>
+</div>
+<br>
+<div>
+  <h1>Atributos</h1>
+  <p>Os seguintes comandos estão disponíveis para uso na tag path:
+    <br>
+    <br>
+    M = moveto: move o cursor para a posição especificada, sem desenhar; <br>
+    L = lineto: cria uma linha reta do ponto imediatamente anterior até o ponto especificado; <br>
+    H = horizontal lineto: cria uma linha horizontal do ponto imediatamente anterior até o ponto especificado; <br>
+    V = vertical lineto: cria uma linha vertical até o ponto especificado;<br>
+    C = curveto: cria uma curva até o ponto especificado; <br>
+    S = smooth curveto: cria uma curva suave até o ponto especificado; <br>
+    Q = quadratic Bézier curve: cria uma curva quadrática até o ponto especificado; <br>
+    T = smooth quadratic Bézier curveto: cria uma curva quadrática suave até o ponto especificado; <br>
+    A = elliptical Arc: cria um arco elíptico até o ponto especificado. <br>
+    Z = closepath <br>
+    <br>
+    <br>
+    Nota: Todos os comandos acima também podem ser expressados com letras minúsculas. Letras maiúsculas indicam posição
+    absoluta; letras minúsculas indicam posição relativa.</p>
+  <br>
+</div>
+<div class="flex-column">
+  <div>
+    <textarea name="codigo" id="fasdf" cols="120" rows="15">
+    <svg height="400" width="450">
+      <path id="lineAB" d="M 100 350 l 150 -300" stroke="red"
+        stroke-width="3" fill="none" />
+      <path id="lineBC" d="M 250 50 l 150 300" stroke="red"
+          stroke-width="3" fill="none" />
+      <path d="M 175 200 l 150 0" stroke="green" stroke-width="3"
+          fill="none" />
+      <path d="M 100 350 q 150 -300 300 0" stroke="blue"
+          stroke-width="5" fill="none" />
+      <g stroke="black" stroke-width="3" fill="black">
+        <circle id="pointA" cx="100" cy="350" r="3" />
+        <circle id="pointB" cx="250" cy="50" r="3" />
+        <circle id="pointC" cx="400" cy="350" r="3" />
+      </g>
+    </svg>
+      </textarea>
+  </div>
+  <div>
+    <svg>
+      <path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="3" fill="none" />
+      <path id="lineBC" d="M 250 50 l 150 300" stroke="red" stroke-width="3" fill="none" />
+      <path d="M 175 200 l 150 0" stroke="green" stroke-width="3" fill="none" />
+      <path d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="5" fill="none" />
+      <!-- Mark relevant points -->
+      <g stroke="black" stroke-width="3" fill="black">
+        <circle id="pointA" cx="100" cy="350" r="3" />
+        <circle id="pointB" cx="250" cy="50" r="3" />
+        <circle id="pointC" cx="400" cy="350" r="3" />
+      </g>
+    </svg>
+  </div>
+</div>

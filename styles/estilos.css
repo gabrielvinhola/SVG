@@ -1,0 +1,74 @@
+html {
+    justify-content: center;
+    background-image: url("../images/background.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Montserrat', sans-serif;
+}
+
+body {
+    background-color: transparent;
+}
+
+header {
+    text-align: center;
+    font-size: xx-large;
+}
+
+p {
+    color: rgb(178, 190, 190);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 25px;
+}
+
+h1 {
+    color: rgb(178, 190, 190);
+    font-size: 48px;
+    text-align: center;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 0 0 0 0;
+    flex: 1 0 auto;
+}
+
+.negrito {
+    font-weight: bold;
+}
+textarea {
+    resize: none;
+    background-color: #f3e9d2;
+}
+
+.flex-row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

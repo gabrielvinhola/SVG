@@ -1,0 +1,79 @@
+<div>
+    <h1>Gradiente</h1>
+    <p>
+        O elemento <span class="negrito">&lt;linearGradient&gt;</span> faz um gradiente que muda as cores ao longo de uma linha.
+        Podemos definir um gradiente linear como horizontal, vertical ou angular.<br>
+        O gradiente é usado sempre dentro do elemento <span class="negrito">&lt;defs&gt;</span>, isso para que você possa referenciar
+        no seu SVG.<br>
+        O elemento <span class="negrito">&lt;radialGradient&gt;</span> faz um gradiente que muda as cores ao longo de raio.<br>
+    </p>
+</div>
+<br>
+<div>
+    <h1>Atributos</h1>
+    <p>
+        y1 e y2 devem ser igual e x1 e x2 devem ser diferentes para que seja horizontal o gradiente linear.<br>
+        x1 e x2 são iguais e y1 e y2 são diferentes para que seja vertical o gradiente linear.<br>
+        x1, x2, y1 e y2 são diferentes para que seja angular o gradiente linar.<br>
+        id: você usa ID para referenciar o seu gradiente.<br>
+        cx e cy: são usados para centralizar o gradiente radial, especificando as porcentagens que você quer.<br>
+        fx e fy: são usados como pontos focais para o gradiente radial, especificando as porcentagens que você quer.<br>
+        r: raio do gradiente.<br>
+    </p>
+    <p>
+        &lt;stop&gt; é onde você define o range de cores do gradiente, sendo ele feito por duas ou mais cores.<br>
+        O atributo offset define quando a cor do gradiente irá começar e quando terminar;<br>
+        O atributo stop-color indica qual cor usar na parada do gradiente;<br>
+        O atributo stop-opacity define a opacidade da cor dada na parada do gradiente (0 ou 1);<br>
+        O atributo fill faz a ligação com o que foi definido na tag &lt;defs&gt;, ou seja, nossa cor do gradiente para o elemento que foi
+        criado e nele será aplicado o gradiente da cor desejada.<br>
+    </p>
+</div>
+<div class="flex-column">
+    <div>
+        <textarea name="gradiente" cols="120" rows="5" readonly>
+            <svg height="800" width="800">
+                <defs>
+                <linearGradient id="star" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:rgb(204,255,179);stop-opacity:1"></stop>
+                    <stop offset="100%" style="stop-color:rgb(0,0,77);stop-opacity:1"></stop>
+                </linearGradient>
+                </defs>
+                <path d="
+                M 200.000 290.000
+                L 317.557 371.803
+                L 276.085 234.721
+                L 390.211 148.197
+                L 247.023 145.279
+                L 200.000 10.000
+                L 152.977 145.279
+                L 9.789 148.197
+                L 123.915 234.721
+                L 82.443 371.803
+                L 200.000 290.000" stroke="black" stroke-width="5" fill="url(#star)"></path>
+            </svg>
+        </textarea>
+    </div>
+    <div>
+        <svg height="800" width="800">
+            <defs>
+            <linearGradient id="star" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:rgb(204,255,179);stop-opacity:1"></stop>
+                <stop offset="100%" style="stop-color:rgb(0,0,77);stop-opacity:1"></stop>
+            </linearGradient>
+            </defs>
+            <path d="
+            M 200.000 290.000
+            L 317.557 371.803
+            L 276.085 234.721
+            L 390.211 148.197
+            L 247.023 145.279
+            L 200.000 10.000
+            L 152.977 145.279
+            L 9.789 148.197
+            L 123.915 234.721
+            L 82.443 371.803
+            L 200.000 290.000" stroke="black" stroke-width="5" fill="url(#star)"></path>
+        </svg>
+    </div>
+</div>
