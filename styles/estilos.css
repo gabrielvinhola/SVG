@@ -17,15 +17,6 @@ header {
     font-size: xx-large;
 }
 
-footer {
-    background-color: #444444;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-}
-
 p {
     color: rgb(178, 190, 190);
     margin-left: 20px;
@@ -63,5 +54,21 @@ h3 {
 }
 textarea {
     resize: none;
-    background-color: #444444;
-  }
+    background-color: #f3e9d2;
+}
+
+.flex-row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,7 +1,8 @@
 <div>
     <h1>Polilinha</h1>
     <p>
-        O elemento <span class="negrito">&lt;polyline&gt;</span> cria qualquer forma que consista somente de linhas retas, que são conectadas
+        O elemento <span class="negrito">&lt;polyline&gt;</span> cria qualquer forma que consista somente de linhas
+        retas, que são conectadas
         nos pontos das suas extremidades.
     </p>
 </div>
@@ -9,19 +10,24 @@
 <div>
     <h1>Atributos</h1>
     <p>O atributo "points" é onde são definidos os pontos por suas coordenadas x e y, separadas por vírgula.</p>
-    <p>Uma linha é traçada com segmentos de retas que partem de um ponto a outro em sequência, desenhando uma forma aberta.</p>
-    
+    <p>Uma linha é traçada com segmentos de retas que partem de um ponto a outro em sequência, desenhando uma forma
+        aberta.</p>
+
     <br>
 </div>
-<div>
-    <textarea name="codigo" id="fasdf" cols="120" rows="5">
-<svg width="400" height="400"> 
-    <polyline points="0,25, 25,25, 25,50, 50,50, 50,75, 75, 75, 75, 100, 100, 100" stroke="red" fill="black"></polyline>
-</svg>
-    </textarea>
-</div>
-<div>
-    <svg width="400" height="400"> 
-        <polyline points="0,25, 25,25, 25,50, 50,50, 50,75, 75, 75, 75, 100, 100, 100" stroke="red" fill="black"></polyline>
-    </svg>
+<div class="flex-row">
+    <div>
+        <textarea name="codigo" id="fasdf" cols="120" rows="5">
+            <svg width="300" height="250"> 
+                <polyline points="50, 75, 75,75, 75,100, 100,100, 125,150, 150, 150, 150, 175, 175, 175" stroke="red" fill="black">
+                </polyline>
+            </svg>
+        </textarea>
+    </div>
+    <div>
+        <svg width="300" height="250">
+            <polyline points="50, 75, 75,75, 75,100, 100,100, 125,150, 150, 150, 150, 175, 175, 175" stroke="red" fill="black">
+            </polyline>
+        </svg>
+    </div>
 </div>
